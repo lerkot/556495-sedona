@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-        <meta charset="utf-8">
-        <title>Седона</title>
- </head>
-  <body>
-	<header class="main-header"> 
-	 <nav class="main-navigation">
-		<ul class="main-menu">
-		 <li><a href="#">Информация</a></li>
-		 <li><a href="#">Фото и видео</a></li>
-		 <li><a href="#">Карта штата</a></li>
-		 <li><a href="#">Гостиницы</a></li>
-		 </ul>
-	 </nav>
-	 <img class="main-logo" src="img/Logo.png" width="138" height="70" alt="Седона">
-	 <h1 class="visually-hidden">Welcome to Sedona!</h1>
+
+<head>
+	<meta charset="utf-8">
+	<title>Седона</title>
+</head>
+
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul class="main-menu">
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+		<a>
+			<img class="main-logo" src="img/main-logo.svg" width="138" height="70" alt="Седона"> 
+		</a>
+		<h1 class="visually-hidden">Welcome to Sedona!</h1>
 	</header>
 	<main class="container">
-	    <div class="promo"></div>
-	    <article class="features">
-	        <h2>Седона - небольшой городок, заслуживающий большего!</h2>
-		    <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-	        <section class="features-items">
-		      <div class="features-items-description">
-				<h3>Настоящий<br>городок</h3>
-				  <span>— №1 —</span>
-				  <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
-		      </div>
-			   <img src="img/city.png" width="800" height="256" alt="Город">
-		    </section>
+		<!--
+			<div class="promo">
+				<img src="img/background%20photo.png" width="1200" alt="Изображение гор Седоны">
+			</div>
+		-->
+		<article class="features">
+			<h2>Седона - небольшой городок, заслуживающий большего!</h2>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			<section class="features-items">
+				<div class="features-items-description">
+					<h3>Настоящий городок</h3>
+					<span>— №1 —</span>
+					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<img src="img/city.jpg" width="800" height="256" alt="Город">
+			</section>
 			<section class="features-list">
-			    <ul class="features-list-items">
-				    <li>
-					    <b>Жилье</b>
+				<ul class="features-list-items">
+					<li>
+						<b>Жилье</b>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
-				    <li>
+					<li>
 						<b>Еда</b>
 						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
@@ -45,84 +53,83 @@
 						<p>Не только китайского, но и местного производства!</p>
 					</li>
 				</ul>
-			 </section>
-			 <section class="features-items">
-			    <img src="img/canyon.png" width="800" height="256" alt="Мост дьявола">
-				<div class="features-items-description">
-				<h3>Там есть<br> Мост дьявола</h3>
-				  <span>— №2 —</span>
-				  <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-		      </div>
 			</section>
 			<section class="features-items">
-			     <ul class="features-list-items">
-				    <li>
-					    <h3>Небольшая<br> площадь</h3>
+				<img src="img/canyon.jpg" width="800" height="256" alt="Мост дьявола">
+				<div class="features-items-description">
+					<h3>Там есть<br>Мост дьявола</h3>
+					<span>— №2 —</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+			</section>
+			<section class="features-items">
+				<ul class="features-list-items">
+					<li>
+						<h3>Небольшая площадь</h3>
 						<span>— №3 —</span>
 						<p>Все достопримечательности находятся очень близко</p>
 					</li>
-				    <li>
-						<h3>Красивая<br> дорога</h3>
+					<li>
+						<h3>Красивая дорога</h3>
 						<span>— №4 —</span>
 						<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 					</li>
 					<li>
-						<h3>Мало<br> туристов</h3>
+						<h3>Мало туристов</h3>
 						<span>— №5 —</span>
 						<p>Большинство едет в гранд каньон и толпится там</p>
 					</li>
 				</ul>
 			</section>
-		</article>	  
+		</article>
 		<div class="search">
 			<b>Заинтересовались?</b>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<button type="button" class="modal">Поиск гостиницы в Седоне</button>
-		 </div>
-		<div class="map"> 
-		     <img src="img/map.png" width="1200" height="475" alt="Карта">
+		</div>
+		<div class="map">
+			<img src="img/map.jpg" width="1200" height="100%" alt="Карта">
 		</div>
 	</main>
 	<footer class="main-footer">
-	      <div><p>#visitsedona</p></div>
-		  <div class="footer-social">
-		    <ul class="social-buttons">
-			 <li>
-			   <a class="tw-icon" href="#">Twitter</a>
-			   </li>
-			   <li>
-			   <a class="fb-icon" href="#">Facebook</a>
-			   </li>
-			   <li>
-			   <a class="yt-icon" href="#">Youtube</a>
-			   </li>
+		<div>
+			<p>#visitsedona</p>
+		</div>
+		<div class="footer-social">
+			<ul class="social-buttons">
+				<li>
+					<a class="tw-icon" href="#">Twitter</a>
+				</li>
+				<li>
+					<a class="fb-icon" href="#">Facebook</a>
+				</li>
+				<li>
+					<a class="yt-icon" href="#">Youtube</a>
+				</li>
 			</ul>
 		</div>
 		<p class="copyright">Website by
-		    <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo_name.png" width="115" height="41" alt="html academy лого">
+			<a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html academy лого">
 		    </a>
 		</p>
-	  </footer>
-	  <section class="modal modal-reservation">
-	      <span>
-		  <form action="/echo" method="post">
-              <fieldset>  
-			    <label>Дата заезда:
+	</footer>
+	<section class="modal modal-reservation">
+		<!-- <form action="/echo" method="post">
+				<fieldset>
+					<label>Дата заезда:
 					<input type="date" name="date"> 
-					<span class="calendar">
-						<img src="img/calendar.png" width="21" height="22" alt="Календарь"></span>
-				  </label><br>
-			    <label>Дата выезда:
+					<div class="calendar">
+						<img src="img/calendar.svg" width="21" height="22" alt="Календарь"></div>
+		           </label>
+				    <label>Дата выезда:
 					<input type="date" name="date"> 
-					<span class="calendar">
-						<img src="img/calendar.png" width="21" height="22" alt="Календарь"></span>
-					</label>
-			    Взрослые:
-			    Дети:
-				<input type="submit" value="Найти">
-			 </fieldset>
-	   </form>
-	   </span>
-	  </section>
-	</body>
+					<div class="calendar">
+					    <img src="img/calendar.svg" width="21" height="22" alt="Календарь"></div>
+					</label> Взрослые: Дети:
+					<input type="submit" value="Найти">
+				</fieldset>
+			</form>-->
+	</section>
+</body>
+
 </html>
