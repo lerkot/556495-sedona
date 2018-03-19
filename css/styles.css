@@ -2,7 +2,8 @@ html,
 body {
 	min-width: 768px;
 	max-width: 1200px;
-
+	margin: 0 auto;
+	padding: 0;
 }
 
 body {
@@ -28,6 +29,13 @@ body {
 	overflow: hidden;
 }
 
+.container {
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 a {
 	text-decoration: none;
 }
@@ -41,11 +49,50 @@ a {
 	background-color: #fff;
 }
 
+.main-navigation-wrapper {
+	position: relative;
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 .main-menu {
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+
+
+.menu-item {
+	width: 20%;
+}
+
+.menu-items:first-child {
+	padding-left: 6%;
+}
+
+.menu-items:nth-child(2) {
+	margin-right: 240px;
+}
+
+.menu-items:last-child {
+	padding-right: 6%;
+}
+
+.menu-items:nth-child(1),
+.menu-items:nth-child(2) {
+	text-align: left;
+}
+
+.menu-items:nth-child(3),
+.menu-items:nth-child(4) {
+	text-align: right;
 }
 
 .main-menu a {
