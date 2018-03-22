@@ -45,7 +45,6 @@ a {
 }
 
 .main-navigation {
-	min-height: 56px;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
@@ -59,7 +58,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-content: stretch;
+	align-items: stretch;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -76,8 +75,10 @@ a {
 	height: 70px;
 }
 
-.menu-item {
+.menu-items {
 	width: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .menu-items:first-child {
@@ -85,7 +86,7 @@ a {
 }
 
 .menu-items:nth-child(2) {
-	margin-right: 240px;
+	margin-right: 8%;
 }
 
 .menu-items:last-child {
@@ -121,7 +122,7 @@ a {
 
 .promo {
 	width: 100%;
-	height: 515px;
+	height: 520px;
 	position: relative;
 	margin-bottom: 60px;
 	background-image: url("../img/main-decor.png"),
@@ -133,7 +134,7 @@ a {
 
 .promo-text {
 	position: absolute;
-	top: 50px;
+	top: 90px;
 	left: 50%;
 	z-index: 1;
 	transform: translatex(-50%);
@@ -164,36 +165,49 @@ a {
 
 .features-list,
 .description-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	list-style: none;
 }
 
-.feature-item-main,
-.description-items {
-	text-align: center;
+
+.features-item-main {
+	width: 100%;
 }
-
-
 
 .features-description {
 	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .features-description .title {
+	width: 200px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #fff;
 }
 
-.features-description p {
+.features-content p {
+	width: 200px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
 	color: #fff;
+	text-align: center;
 }
 
 .features-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 33%;
+	padding: 0;
 	text-align: center;
 	background-color: #81b3d2;
 }
@@ -202,7 +216,20 @@ a {
 	width: 67%;
 	background-image: url("../img/city.jpg");
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: cover;
+}
+
+.description-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+.description-items {
+	width: 33%;
+	padding-top: 100px;
+
 }
 
 .description-items b {
@@ -220,33 +247,51 @@ a {
 }
 
 .features-pic-2 {
+	width: 67%;
 	background-image: url("../img/canyon.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .features-item {
+	display: flex;
+	flex-wrap: wrap;
+	width: 33%;
+	flex-grow: 1;
+	margin-bottom: 55px;
 	text-align: center;
 	background-color: #eeeeee;
 }
 
+.content-align {
+	justify-content: center;
+	margin: 0;
+	padding: 40px 30px;
+	text-align: center;
+}
 
-.features-item h3 {
+.content-align h3 {
+	margin: 0;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #000;
+	text-align: center;
 }
 
-.features-item p {
+.content-align p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #333;
+	text-align: center;
 }
 
 .search {
+	width: 100%;
 	background-color: #fff;
 }
+
 
 .search h3 {
 	text-align: center;
@@ -269,15 +314,15 @@ a {
 	background-color: inherit;
 }
 
-div.calendar {
+.calendar {
 	fill: #eeeeee;
 }
 
-div.calendar:hover {
+.calendar:hover {
 	fill: #000;
 }
 
-div.calendar:active {
+.calendar:active {
 	fill: #90bcd7;
 }
 
@@ -489,7 +534,7 @@ div.calendar:active {
 }
 
 .container .filter-background {
-	background-image: url("../img/filter%20background.png");
+	background-image: url("../img/filter-background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #536677;
