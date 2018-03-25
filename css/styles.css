@@ -1,5 +1,6 @@
 html {
 	background-color: #f2f2f2;
+
 }
 
 
@@ -7,6 +8,7 @@ body {
 	min-width: 768px;
 	max-width: 1200px;
 	margin: 0 auto;
+
 	padding: 0;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -383,6 +385,7 @@ img {
 
 
 .btn {
+	position: relative;
 	width: 568px;
 	margin: 0 auto;
 	padding: 30px;
@@ -421,16 +424,11 @@ img {
 }
 
 
-.map img {
-	width: 100%;
-	height: 100%;
-	background-color: #e9e5dc;
-}
-
 .search-form {
 	position: absolute;
 	top: 2170px;
 	left: 50%;
+	z-index: 1;
 	width: 568px;
 	height: 395px;
 	padding-top: 53px;
@@ -438,6 +436,7 @@ img {
 	background-color: white;
 	transform: translateX(-50%);
 	box-sizing: border-box;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .search-form p {
@@ -731,13 +730,27 @@ input::-webkit-inner-spin-button {
 	border: none;
 }
 
+.map {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin-bottom: -120px;
+}
+
+
 .main-footer {
+	position: relative;
+	bottom: 1px;
+	margin-top: -120px;
+	z-index: 1;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 36px 0;
+	text-align: center;
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.90);
 	background-position: 0 0;
@@ -759,6 +772,7 @@ input::-webkit-inner-spin-button {
 	margin: 0 auto;
 	text-transform: uppercase;
 	text-align: center;
+	vertical-align: middle;
 	font-size: 21px;
 	font-weight: 700;
 }
@@ -780,7 +794,7 @@ input::-webkit-inner-spin-button {
 	list-style: none;
 }
 
-.main-footer .social-buttons a {
+.main-footer .icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -791,10 +805,28 @@ input::-webkit-inner-spin-button {
 	text-decoration: none;
 }
 
+.main-footer .icon:hover,
+.main-footer .icon:focus {
+	background-color: #669ec0;
+}
+
+.main-footer .icon:active,
+.main-footer .icon:active {
+	background-color: #5496bd;
+}
+
+
+.icon:active path {
+	fill: rgba(255, 255, 255, 0.3);
+}
 
 .main-footer .copyright {
 	width: 33%;
-	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
 	padding: 0;
 	font-size: 14px;
 	line-height: 26px;
@@ -802,15 +834,19 @@ input::-webkit-inner-spin-button {
 	color: #000;
 }
 
-.ha-logo {
+.main-footer .copyright-text {
+	margin-right: -190px;
+}
+
+.copyright .ha-logo path {
 	fill: #000;
 }
 
-.ha-logo:hover {
+.copyright .ha-logo:hover path {
 	fill: #90bcd7;
 }
 
-.ha-logo:active {
+.copyright .ha-logo:active path {
 	fill: #a9a9a9;
 }
 
