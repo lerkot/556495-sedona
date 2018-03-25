@@ -546,6 +546,15 @@ input::-webkit-inner-spin-button {
 	fill: #90bcd7;
 }
 
+.guest-field {
+	margin: 0;
+	padding: 0;
+}
+
+.guest-field label {
+	margin: 0;
+	padding: 0;
+}
 
 .guest-field .guest-amount {
 	width: 114px;
@@ -560,7 +569,7 @@ input::-webkit-inner-spin-button {
 .guest-field .adult-minus {
 	position: absolute;
 	top: 204px;
-	left: 168px;
+	left: 148px;
 	z-index: 1;
 	stroke: #a9a9a9;
 	border: none;
@@ -569,10 +578,12 @@ input::-webkit-inner-spin-button {
 
 }
 
+
+
 .guest-field .adult-plus {
 	position: absolute;
 	top: 204px;
-	left: 245px;
+	left: 230px;
 	z-index: 1;
 	stroke: #a9a9a9;
 	border: none;
