@@ -738,7 +738,6 @@ input::-webkit-inner-spin-button {
 
 
 .main-footer {
-	position: relative;
 	bottom: 1px;
 	margin-top: -120px;
 	z-index: 1;
