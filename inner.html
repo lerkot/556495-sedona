@@ -11,21 +11,23 @@
 
 <body class="inner-page">
 	<header class="main-header">
-		<nav class="main-navigation">
+		<nav class="main-navigation container">
+
 			<ul class="main-menu">
 				<li class="menu-items">
-					<a href="#">Информация</a>
+					<a href="# ">Информация</a>
 				</li>
 				<li class="menu-items">
-					<a href="#">Фото и видео</a>
+					<a href="# ">Фото и видео</a>
 				</li>
 				<li class="menu-items">
-					<a href="#">Карта штата</a>
+					<a href="# ">Карта штата</a>
 				</li>
 				<li class="menu-items">
-					<a class="active" href="index.html">Гостиницы</a>
+					<a href="# " class="active">Гостиницы</a>
 				</li>
 			</ul>
+
 		</nav>
 		<a href="index.html">
 		 <img class="main-logo" src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
@@ -34,23 +36,22 @@
 	</header>
 	<main class="container">
 		<section class="filter-background">
-			<h2 class="visually-hidden">Фильтр гостиниц</h2>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset class="filter-facilities">
-					<legend class="legend">Инфраструктура
+					<legend class="legend facilities">Инфраструктура
 					</legend>
 					<ul class="filter-list">
-						<li>
+						<li class="filter-list-items">
 							<label>
 							    <input class="filter-checkbox" type="checkbox" name="pool" checked> Бассейн 
 							</label>
 						</li>
-						<li>
+						<li class="filter-list-items">
 							<label>
 							    <input class="filter-checkbox" type="checkbox" name="parking"> Парковка
 							</label>
 						</li>
-						<li>
+						<li class="filter-list-items">
 							<label>
 								<input class="filter-checkbox" type="checkbox" name="Wi-Fi"> Wi-Fi
 							</label>
@@ -62,66 +63,37 @@
 						Тип жилья
 					</legend>
 					<ul class="filter-list">
-						<li>
+						<li class="filter-list-items">
 							<label>
 							    <input class="filter-checkbox" type="checkbox" name="hotel" checked> Гостиница
 							</label>
 						</li>
-						<li>
+						<li class="filter-list-items">
 							<label>
 							    <input class="filter-checkbox" type="checkbox" name="motel" checked> Мотель
 							</label>
 						</li>
-						<li>
+						<li class="filter-list-items">
 							<label>
 							    <input class="filter-checkbox" type="checkbox" name="apartments" checked> Апартаменты
 							</label>
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="filter-price">
-					<legend class="legend">Стоимость в сутки (Р):
-					</legend>
-					<div class="filter-prices-numbers">
-						<label>От
-				           <input type="text" class="filter-prices-from" placeholder="0">
-					    </label>
-						<label>До
-				           <input type="text" class="filter-prices-to" placeholder="3000">
-				        </label>
+				<fieldset class="filter-range">
+					<legend class="filter-range-title">Стоимость в сутки (р):</legend>
+					<div class="price-controls">
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 					</div>
-					<div class="filter-prices-range">
-						<div class="range-bubble">
-							<p class="visually-hidden">Стоимость от 0
-							</p>
-							<svg class="range-icon" version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
-                            <path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2
-	                        C20,15.522,15.522,20,10,20z"/>
-                            <circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
-                            <circle fill="#ABABAB" cx="10" cy="10" r="2"/>
-							</svg>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
 						</div>
-						<div class="range-bubble">
-							<p class="visually-hidden">Стоимость до 3000
-							</p>
-							<svg class="range-icon" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="23px" viewBox="0 0 20 23" enable-background="new 0 0 20 23" xml:space="preserve">
-                            <path opacity="0.3" fill="#ABABAB" d="M10,20C4.477,20,0,15.522,0,10v2c0,5.522,4.477,10,10,10c5.522,0,10-4.478,10-10v-2
-	                        C20,15.522,15.522,20,10,20z"/>
-                            <circle fill="#FFFFFF" cx="10" cy="10" r="10"/>
-                            <circle fill="#ABABAB" cx="10" cy="10" r="2"/>
-							</svg>
-						</div>
-						<div class="range-rail">
-							<svg id="Слой_1" xmlns="http://www.w3.org/2000/svg" width="220" height="2" viewBox="0 0 220 2">
-								<style>.st1{fill:#fff}</style>
-								<path class="st1" d="M0 0h220v2H0z" opacity=".3"/>
-								<path class="st1" d="M0 0h154v2H0z"/>
-							</svg>
-						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
 					</div>
-					<button type="submit" class="filter-button button">
-	               Показать
-	            </button>
+					<button class="btn-transparent" type="submit">Показать</button>
 				</fieldset>
 			</form>
 		</section>
