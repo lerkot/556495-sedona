@@ -158,7 +158,7 @@ img {
 .features-title {
 	margin: 0;
 	margin-bottom: 24px;
-	padding: 0 320px;
+	padding: 0 23%;
 	font-size: 21px;
 	font-weight: 700;
 	line-height: 26px;
@@ -429,12 +429,25 @@ img {
 	margin-bottom: -120px;
 }
 
+.map img {
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+}
+
+.google-map {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 593px;
+}
 
 .search-form {
 	position: absolute;
 	top: 0;
 	left: 50%;
-	z-index: 2;
+	z-index: 3;
+	display: none;
 	width: 568px;
 	height: 395px;
 	padding-top: 53px;
@@ -935,7 +948,7 @@ body.inner-page {
 }
 
 .filter-background .filter-list-items {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 
