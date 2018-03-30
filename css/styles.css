@@ -1168,10 +1168,20 @@ body.inner-page {
 }
 
 .sort {
+	margin: 0;
+	padding: 0;
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.sort-title {
+.sort-bar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: stretch;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -1179,17 +1189,39 @@ body.inner-page {
 	color: #000;
 }
 
-.sort-list {
-	list-style: none;
+.sort-title {
+	align-self: baseline;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 6%;
+	margin-right: 48px;
+	font-size: 21px;
+	line-height: 26px;
+	color: black;
+	text-transform: uppercase;
 }
 
+.sort-name,
+.sort-item {
+	align-self: baseline;
+}
 
-.sort-list li:first-of-type {
+.sort-bar .sort-name {
+	margin-right: 43px;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #000;
+}
+
+.sort-item {
+	margin-right: 32px;
+}
+
+.sort-item a,
+.sort-rating {
+	display: block;
 }
 
 .sort-item a:link {
@@ -1222,11 +1254,19 @@ body.inner-page {
 	border: none;
 }
 
-.sort-list .active {
+.sort-bar .active {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 	color: #81b3d2;
+}
+
+
+.sort-rating {
+	align-self: baseline;
+	width: 37px;
+	margin-left: auto;
+	padding-right: 6%;
 }
 
 .sort-icon {
@@ -1244,6 +1284,8 @@ body.inner-page {
 
 .sort-rating .icon-down {
 	fill: #81b3d2;
+	padding-left: 7px;
+	margin-right: 0;
 }
 
 .search-results {
