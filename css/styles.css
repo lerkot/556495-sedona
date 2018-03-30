@@ -427,12 +427,14 @@ img {
 	width: 100%;
 	height: 593px;
 	margin-bottom: -120px;
+	box-sizing: border-box;
 }
 
 .map img {
 	position: absolute;
 	bottom: 0;
 	z-index: 0;
+	left: 0;
 }
 
 .google-map {
@@ -903,9 +905,9 @@ body.inner-page {
 
 .container .filter-background {
 	width: 100%;
-	background-image: url("../img/filter-background-2.png");
-	background-size: 100% contain;
-
+	background-image: url("../img/inner-background-2.jpg");
+	background-size: 100% cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-color: #536677;
 }
