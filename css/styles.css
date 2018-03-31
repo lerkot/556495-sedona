@@ -777,7 +777,7 @@ input::-webkit-inner-spin-button {
 	z-index: 1;
 	width: 100%;
 	margin: 0;
-	padding: 26px 0;
+	padding: 36px 0;
 	text-align: center;
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.90);
@@ -866,8 +866,8 @@ input::-webkit-inner-spin-button {
 	line-height: 26px;
 }
 
-.copyright .ha-logo {
-	padding-top: 20px;
+.main-footer .ha-logo {
+	margin-left: 10px;
 }
 
 .copyright .ha-logo path {
