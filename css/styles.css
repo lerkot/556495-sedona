@@ -157,7 +157,7 @@ img {
 
 .features-title {
 	margin: 0;
-	margin-bottom: 24px;
+	margin-bottom: 26px;
 	padding: 0 23%;
 	font-size: 21px;
 	font-weight: 700;
@@ -1460,6 +1460,7 @@ a.hotel-name:active {
 .stars-container-desert .star,
 .stars-container-villas .star {
 	display: inline-block;
+	text-align: right;
 	width: 18px;
 	height: 17px;
 	background-image: url("../img/star.svg");
