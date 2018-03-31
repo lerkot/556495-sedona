@@ -144,7 +144,7 @@ img {
 	position: relative;
 	margin-bottom: 61px;
 	background-image: url("../img/main-decor.png"),
-	url("../img/background-photo-1.jpg");
+	url("../img/background-photo.jpg");
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: bottom, center;
@@ -1074,7 +1074,7 @@ body.inner-page {
 
 .filter-background {
 	width: 100%;
-	background-image: url("../img/inner-background-2.jpg");
+	background-image: url("../img/inner-background.jpg");
 	background-size: 100%, cover;
 	background-position: center;
 	background-repeat: no-repeat;
