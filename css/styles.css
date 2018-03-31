@@ -185,6 +185,7 @@ img {
 	padding: 0;
 	text-align: center;
 	list-style: none;
+	box-sizing: border-box;
 }
 
 
@@ -202,7 +203,7 @@ img {
 .features-content {
 	width: 33.33%;
 	padding: 0;
-	padding-bottom: 33px;
+	padding-bottom: 37px;
 	text-align: center;
 	background-color: #81b3d2;
 }
@@ -210,9 +211,9 @@ img {
 .features-content h3 {
 	margin: 0;
 	padding-top: 48px;
-	padding-left: 96px;
-	padding-right: 96px;
-	padding-bottom: 26px;
+	padding-left: 25%;
+	padding-right: 25%;
+	padding-bottom: 24px;
 	font-size: 21px;
 	line-height: 21px;
 	font-weight: 700;
@@ -223,9 +224,9 @@ img {
 .features-content p {
 	margin: 0;
 	padding-top: 0;
-	padding-right: 47px;
-	padding-left: 47px;
-	padding-bottom: 22px;
+	padding-right: 15%;
+	padding-left: 15%;
+	padding-bottom: 21px;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
@@ -233,6 +234,10 @@ img {
 	text-align: center;
 }
 
+.features-content p.small-align {
+	padding-right: 12%;
+	padding-left: 12%;
+}
 
 
 .features-pic-1 {
@@ -266,9 +271,9 @@ img {
 
 
 .description-items p {
-	padding-left: 53px;
-	padding-right: 55px;
-	padding-top: 9px;
+	padding-left: 13%;
+	padding-right: 13%;
+	padding-top: 8px;
 	padding-bottom: 67px;
 	font-size: 14px;
 	font-weight: 400;
@@ -279,19 +284,19 @@ img {
 .icon-house {
 	background-image: url("../img/icon-1.svg");
 	background-repeat: no-repeat;
-	background-position: center 60px;
+	background-position: center 58px;
 }
 
 .icon-food {
 	background-image: url("../img/icon-3.svg");
 	background-repeat: no-repeat;
-	background-position: center 60px;
+	background-position: center 58px;
 }
 
 .icon-souvenirs {
 	background-image: url("../img/icon-2.svg");
 	background-repeat: no-repeat;
-	background-position: center 60px;
+	background-position: center 53px;
 }
 
 .features-pic-2 {
@@ -306,24 +311,26 @@ img {
 .features-item {
 	display: flex;
 	flex-wrap: wrap;
-	width: 33%;
-	flex-grow: 1;
+	width: 33.3%;
 	margin-bottom: 55px;
 	text-align: center;
 	background-color: #eeeeee;
 }
 
+
+
 .content-align {
 	justify-content: center;
+	width: 100%;
 	margin: 0;
-	padding: 48px 30px;
+	padding: 48px 15%;
 	text-align: center;
 }
 
 .content-align h3 {
 	margin: 0;
-	padding-left: 90px;
-	padding-right: 90px;
+	padding-left: 23%;
+	padding-right: 23%;
 	padding-bottom: 23px;
 	font-size: 21px;
 	line-height: 21px;
@@ -349,7 +356,7 @@ img {
 
 .content-align p:last-of-type {
 	padding-bottom: 11px;
-	padding-right: 30px;
+
 }
 
 .search {
@@ -1324,14 +1331,20 @@ body.inner-page {
 
 .hotel-desc {
 	width: 28%;
+	margin-top: -5px;
 }
 
 .hotel-desc span:first-child {
 	padding-right: 33px;
 }
 
+.search-item span.villas-padding {
+	padding-right: 3px;
+}
+
 .hotel-desc h3 {
 	margin: 0;
+	margin-bottom: 7px;
 	padding: 0;
 }
 
@@ -1376,6 +1389,7 @@ a.hotel-name:active {
 .link-more {
 	display: block;
 	margin-right: 6px;
+	margin-top: 14px;
 	width: 110px;
 	height: 27px;
 	padding-top: 3px;
@@ -1407,10 +1421,13 @@ a.hotel-name:active {
 	background-color: #5496bd;
 }
 
+
+
 .hotel-reserve {
 	display: block;
 	width: 142px;
 	height: 27px;
+	margin-top: 14px;
 	padding-top: 3px;
 	font-size: 14px;
 	line-height: 21px;
@@ -1449,6 +1466,8 @@ a.hotel-name:active {
 
 .stars-container-amara {
 	margin-bottom: 20px;
+	margin-bottom: 49px;
+	margin-left: auto;
 	width: 89px;
 	height: 17px;
 	text-align: right;
@@ -1466,28 +1485,43 @@ a.hotel-name:active {
 	background-repeat: no-repeat;
 }
 
+.stars-container-amara .star:nth-child(4) {
+	padding-left: 2px;
+}
+
+.stars-container-amara .star:nth-child(3) {
+	padding-left: 2px;
+}
+
 .stars-container-desert {
 	margin-bottom: 20px;
-	width: 61px;
+	margin-bottom: 49px;
+	margin-left: auto;
+	width: 70px;
 	height: 17px;
 	text-align: right;
 }
 
 .stars-container-villas {
 	margin-bottom: 20px;
+	margin-bottom: 49px;
+	margin-left: auto;
 	width: 40px;
 	height: 17px;
 	text-align: right;
 }
 
 .search-list .rating-text {
-	padding: 5px 16px;
+	width: 110px;
+	height: 27px;
+	padding: 5px 15px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	color: #666;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
+	box-sizing: border-box;
 }
 
 .hotel-preview-desert {
