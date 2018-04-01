@@ -1504,8 +1504,6 @@ body.inner-page {
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
-	padding-left: 6%;
-	padding-right: 6%;
 	list-style: none;
 	box-sizing: border-box;
 }
@@ -1519,7 +1517,10 @@ body.inner-page {
 	width: 100%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	padding-left: 6%;
+	padding-right: 6%;
 	border-bottom: 1px solid #e5e5e5;
+	box-sizing: border-box;
 }
 
 .hotel-preview-amara {
@@ -1666,16 +1667,17 @@ a.hotel-name:active {
 }
 
 .hotel-rating {
-	width: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	margin-left: auto;
 }
 
-.stars-container-amara {
-	margin-bottom: 20px;
-	margin-bottom: 49px;
+.stars-container-amara,
+.stars-container-desert,
+.stars-container-villas {
+	margin-bottom: 40px;
 	margin-left: auto;
-	width: 89px;
-	height: 17px;
 	text-align: right;
 
 }
@@ -1691,34 +1693,8 @@ a.hotel-name:active {
 	background-repeat: no-repeat;
 }
 
-.stars-container-amara .star:nth-child(4) {
-	padding-left: 2px;
-}
-
-.stars-container-amara .star:nth-child(3) {
-	padding-left: 2px;
-}
-
-.stars-container-desert {
-	margin-bottom: 20px;
-	margin-bottom: 49px;
-	margin-left: auto;
-	width: 70px;
-	height: 17px;
-	text-align: right;
-}
-
-.stars-container-villas {
-	margin-bottom: 20px;
-	margin-bottom: 49px;
-	margin-left: auto;
-	width: 40px;
-	height: 17px;
-	text-align: right;
-}
 
 .search-list .rating-text {
-	width: 110px;
 	height: 27px;
 	padding: 5px 15px;
 	font-size: 14px;
