@@ -531,17 +531,22 @@ img {
 
 .search-form .date-chekin {
 	position: relative;
-	width:
+	width: 463px;
+	box-sizing: border-box;
+
 }
 
 .date-chekin label,
 .date-chekin label {
 	width: 97px;
 	box-sizing: border-box;
+
 }
 
 .search-form .date-chekout {
 	position: relative;
+	width: 463px;
+	box-sizing: border-box;
 }
 
 .search-form .check-in {
@@ -732,6 +737,7 @@ input::-webkit-inner-spin-button {
 	position: relative;
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 
