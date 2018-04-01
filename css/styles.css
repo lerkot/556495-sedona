@@ -216,7 +216,6 @@ img {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 256px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -343,6 +342,7 @@ img {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	width: 33.33%;
 	margin-bottom: 55px;
 	padding: 0;
@@ -1264,13 +1264,13 @@ body.inner-page {
 .price-controls .min-price,
 .price-controls .max-price {
 	padding-left: 20%;
-	width: 26%;
+
 }
 
 
 
 .price-controls input {
-	width: 50px;
+	width: 35px;
 	margin: 0;
 
 	color: inherit;
