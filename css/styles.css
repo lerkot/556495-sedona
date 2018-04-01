@@ -1121,15 +1121,21 @@ body.inner-page {
 }
 
 .filter-background .filter-facilities {
-	width: 153px;
-
+	width: 197px;
 }
 
 .filter-type {
-	width: 169px;
-	padding-left: 9.7%;
+	width: 214px;
+	padding-left: 5.5%;
 	box-sizing: content-box;
 }
+
+/*width: 250px;
+    padding-left: 9.7%;
+    box-sizing: content-box;
+width: 169px;
+	padding-left: 9.7%;
+	box-sizing: content-box;*/
 
 .filter-background .filter-list-items {
 	margin-bottom: 25px;
@@ -1212,7 +1218,7 @@ body.inner-page {
 }
 
 .filter-range {
-	min-width: 225px;
+	min-width: 223px;
 	width: 30%;
 	margin-left: auto;
 	color: #ffffff;
