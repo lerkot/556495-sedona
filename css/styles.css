@@ -511,6 +511,11 @@ img {
 	border: none;
 }
 
+
+.form-container {
+	width: 568px;
+}
+
 .search-form p {
 	margin: 0;
 	vertical-align: middle;
@@ -529,11 +534,12 @@ img {
 }
 
 .search-form input {
-	width: 345px;
+	width: 300px;
 	height: 38px;
 	margin-bottom: 29px;
 	margin-left: 19px;
 	font-size: 14px;
+	line-height: 38px;
 	font-weight: 700;
 	color: #000;
 	background-color: #f2f2f2;
@@ -554,9 +560,11 @@ img {
 }
 
 .search-form input:focus {
+	height: 38px;
 	font-size: 14px;
 	font-weight: 700;
 	color: #000;
+	line-height: 38px;
 	background-color: #fff;
 	outline: 2px solid #e5e5e5;
 }
@@ -646,42 +654,44 @@ input::-webkit-inner-spin-button {
 	fill: #90bcd7;
 }
 
-.guest-field {
+.input-adult,
+.input-child {
 	margin: 0;
 	padding: 0;
 }
 
-.guest-field label {
+.input-adult label,
+.input-child label {
 	margin: 0;
 	padding-left: 55px;
 }
 
-.guest-field .label-child-align {
+.label-child-align {
 	padding-left: 51px;
 }
 
-.guest-field input {
+input {
 	margin-bottom: 0;
 }
 
-.guest-field .guest-adult,
-.guest-field .guest-child {
+.input-adult .guest-adult,
+.input-child .guest-child {
 	width: 114px;
 	margin-left: 37px;
 }
 
-.guest-field .guest-adult {
+.input-adult .guest-adult {
 	position: relative;
 	margin-right: -2px;
 }
 
-.guest-field .guest-child {
+.input-child .guest-child {
 	position: relative;
 	margin-left: 24px;
 
 }
 
-.guest-field .adult-minus {
+.input-adult .adult-minus {
 	position: absolute;
 	top: 201px;
 	left: 174px;
@@ -693,7 +703,7 @@ input::-webkit-inner-spin-button {
 
 }
 
-.guest-field .child-minus {
+.child-minus {
 	position: absolute;
 	top: 201px;
 	left: 407px;
@@ -704,7 +714,7 @@ input::-webkit-inner-spin-button {
 	cursor: pointer;
 }
 
-.guest-field .child-plus {
+.child-plus {
 	position: absolute;
 	top: 201px;
 	left: 481px;
@@ -715,7 +725,7 @@ input::-webkit-inner-spin-button {
 	cursor: pointer;
 }
 
-.guest-field .adult-plus {
+.adult-plus {
 	position: absolute;
 	top: 201px;
 	left: 250px;
@@ -727,7 +737,7 @@ input::-webkit-inner-spin-button {
 
 }
 
-.guest-field input:nth-child(3)::-webkit-input-placeholder {
+input:nth-child(3)::-webkit-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -736,7 +746,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:nth-child(3):-ms-input-placeholder {
+input:nth-child(3):-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -745,7 +755,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:nth-child(3)::-ms-input-placeholder {
+input:nth-child(3)::-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -754,7 +764,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:nth-child(3)::placeholder {
+input:nth-child(3)::placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -763,7 +773,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:last-of-type::-webkit-input-placeholder {
+input:last-of-type::-webkit-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -772,7 +782,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:last-of-type:-ms-input-placeholder {
+input:last-of-type:-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -781,7 +791,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:last-of-type::-ms-input-placeholder {
+input:last-of-type::-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
@@ -790,7 +800,7 @@ input::-webkit-inner-spin-button {
 	text-transform: uppercase;
 }
 
-.guest-field input:last-of-type::placeholder {
+input:last-of-type::placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
