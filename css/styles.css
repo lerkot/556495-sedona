@@ -516,7 +516,6 @@ img {
 .search-form p {
 	margin: 0;
 	padding: 0;
-	padding-left: 0;
 }
 
 
@@ -529,10 +528,16 @@ img {
 	color: #000;
 }
 
+.search-form .date-chekin {
+	position: relative;
+}
+
+.search-form .date-chekout {
+	position: relative;
+}
 
 .search-form .check-in {
-	flex-grow: 1;
-	width: 340px;
+	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
 	margin-left: 20px;
@@ -545,8 +550,7 @@ img {
 }
 
 .search-form .check-in:hover {
-	flex-grow: 1;
-	width: 341px;
+	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
 	margin-left: 20px;
@@ -559,8 +563,7 @@ img {
 }
 
 .search-form .check-in:focus {
-	flex-grow: 1;
-	width: 341px;
+	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
 	margin-left: 20px;
@@ -672,8 +675,8 @@ input::-webkit-inner-spin-button {
 
 .calendar-icon-in {
 	position: absolute;
-	top: 55px;
-	left: 468px;
+	top: 0px;
+	left: 419px;
 	display: block;
 	width: 38px;
 	height: 38px;
@@ -681,13 +684,13 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 .calendar-icon-out {
 	position: absolute;
-	top: 123px;
-	left: 474px;
+	top: 0px;
+	left: 419px;
 	display: block;
 	width: 38px;
 	height: 38px;
@@ -695,7 +698,7 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 .calendar-icon-in:hover,
@@ -712,6 +715,7 @@ input::-webkit-inner-spin-button {
 
 .form-container .input-adult,
 .form-container.input-child {
+	position: relative;
 	margin: 0;
 	padding: 0;
 }
@@ -762,8 +766,8 @@ input::-webkit-inner-spin-button {
 
 .input-adult .adult-minus {
 	position: absolute;
-	top: 192px;
-	left: 167px;
+	top: 1px;
+	left: 113px;
 	z-index: 1;
 	display: block;
 	width: 38px;
@@ -772,7 +776,7 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 .input-child .child-minus {
@@ -787,7 +791,7 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 .input-child .child-plus {
@@ -802,13 +806,13 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 .input-adult .adult-plus {
 	position: absolute;
-	top: 192px;
-	left: 244px;
+	top: 0px;
+	left: 190px;
 	z-index: 1;
 	display: block;
 	width: 38px;
@@ -817,7 +821,7 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 
 }
 
@@ -902,7 +906,7 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 1px solid #e5e5e5;
 }
 
 
@@ -937,7 +941,7 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	border: 1px solid black;
+	outline: 2px solid #e5e5e5;
 }
 
 
@@ -978,7 +982,7 @@ input:last-of-type::placeholder {
 	border: none;
 	cursor: pointer;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	outline: 1px solid #e5e5e5;
 }
 
 .btn-search:hover,
