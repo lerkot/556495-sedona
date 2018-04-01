@@ -1062,8 +1062,19 @@ body.inner-page {
 
 /*Блок с фоном и формами*/
 
+.filter-background .filter {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding-bottom: 5px;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+
+
 .filter-background,
-.filter,
 .filter-facilities,
 .filter-type,
 .filter-range {
@@ -1083,22 +1094,6 @@ body.inner-page {
 
 
 
-.filter-background .filter-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-.filter {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	padding-bottom: 5px;
-}
-
-
 .legend {
 	padding-top: 27px;
 	padding-bottom: 25px;
@@ -1107,6 +1102,13 @@ body.inner-page {
 	font-weight: 700;
 	color: #ffffff;
 	margin-right: 0;
+}
+
+
+.filter-background .filter-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 
@@ -1119,14 +1121,14 @@ body.inner-page {
 }
 
 .filter-background .filter-facilities {
-	width: 21.3%;
-	padding-left: 6%;
+	width: 153px;
 
 }
 
 .filter-type {
-	width: 22.75%;
-
+	width: 169px;
+	padding-left: 9.7%;
+	box-sizing: content-box;
 }
 
 .filter-background .filter-list-items {
@@ -1207,7 +1209,6 @@ body.inner-page {
 .filter-range {
 	width: 26.5%;
 	margin-left: auto;
-	padding-right: 6%;
 	color: #ffffff;
 	text-transform: uppercase;
 	border: none;
@@ -1266,7 +1267,6 @@ body.inner-page {
 	padding-left: 20%;
 
 }
-
 
 
 .price-controls input {
