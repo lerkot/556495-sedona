@@ -401,7 +401,7 @@ img {
 
 .search h3 {
 	margin: 0;
-	padding-bottom: 36px;
+	padding-bottom: 27px;
 	text-align: center;
 	font-size: 30px;
 	line-height: 30px;
@@ -541,6 +541,7 @@ img {
 .date-chekin label {
 	position: relative;
 	display: flex;
+	padding-top: 5px;
 	width: 97px;
 	box-sizing: border-box;
 
@@ -726,7 +727,7 @@ input::-webkit-inner-spin-button {
 .calendar-icon-in:focus,
 .calendar-icon-out:focus {
 	fill: #000;
-	outline: 1px solid #e5e5e5;
+
 }
 
 .calendar-icon-in:active,
@@ -938,7 +939,7 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	outline: 1px solid #e5e5e5;
+
 }
 
 .adult-minus:active,
@@ -950,7 +951,7 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	outline: 1px solid #e5e5e5;
+
 }
 
 .child-plus,
@@ -974,7 +975,7 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	outline: 1px solid #e5e5e5;
+
 }
 
 .child-plus:active,
@@ -986,13 +987,13 @@ input:last-of-type::placeholder {
 	border: none;
 	background-color: inherit;
 	cursor: pointer;
-	outline: 1px solid #e5e5e5;
+
 }
 
 .btn-search {
 	width: 456px;
 	height: 58px;
-	margin-top: 50px;
+	margin-top: 56px;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
@@ -1011,7 +1012,7 @@ input:last-of-type::placeholder {
 .btn-search:focus {
 	width: 456px;
 	height: 58px;
-	margin-top: 50px;
+	margin-top: 56px;
 	padding: 0;
 	text-align: center;
 	text-align: center;
@@ -1027,7 +1028,7 @@ input:last-of-type::placeholder {
 .btn-search:active {
 	width: 456px;
 	height: 58px;
-	margin-top: 50px;
+	margin-top: 56px;
 	padding: 0;
 	text-align: center;
 	text-align: center;
