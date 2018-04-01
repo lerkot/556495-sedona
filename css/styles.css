@@ -531,6 +531,8 @@ img {
 
 .search-form .date-chekin {
 	position: relative;
+	display: flex;
+	margin-left: auto;
 	width: 463px;
 	box-sizing: border-box;
 
@@ -538,6 +540,9 @@ img {
 
 .date-chekin label,
 .date-chekin label {
+	position: relative;
+	display: flex;
+	margin-left: auto;
 	width: 97px;
 	box-sizing: border-box;
 
