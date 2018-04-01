@@ -532,7 +532,6 @@ img {
 .search-form .date-chekin {
 	position: relative;
 	display: flex;
-	margin-left: auto;
 	width: 463px;
 	box-sizing: border-box;
 
@@ -542,7 +541,6 @@ img {
 .date-chekin label {
 	position: relative;
 	display: flex;
-	margin-left: auto;
 	width: 97px;
 	box-sizing: border-box;
 
@@ -558,7 +556,7 @@ img {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 20px;
+	margin-left: 14px;
 	font-size: 14px;
 	line-height: 37px;
 	font-weight: 700;
@@ -572,7 +570,7 @@ img {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 20px;
+	margin-left: 14px;
 	font-size: 14px;
 	line-height: 37px;
 	font-weight: 700;
@@ -585,7 +583,7 @@ img {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 20px;
+	margin-left: 14px;
 	font-size: 14px;
 	font-weight: 700;
 	color: #000;
@@ -685,7 +683,7 @@ img {
 	vertical-align: middle;
 }
 
-input[type='number'] {
+input[type="number"] {
 	-moz-appearance: textfield;
 }
 
@@ -1421,19 +1419,23 @@ body.inner-page {
 	cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price {
+.price-controls .min-price {
 	padding-left: 20%;
 
 }
 
 
+.price-controls .max-price {
+	padding-left: 30%;
+}
+
 .price-controls input {
 	width: 35px;
 	margin: 0;
-
+	height: 32px;
 	color: inherit;
 	font: inherit;
+	line-height: 32px;
 
 	background: none;
 	border: none;
@@ -1489,7 +1491,7 @@ body.inner-page {
 
 .btn-transparent {
 	display: block;
-	margin: 0 auto;
+	margin: 0 86px;
 	padding: 6px 35px;
 
 	font-size: 14px;
@@ -1844,6 +1846,7 @@ a.hotel-name:active {
 	text-align: right;
 	width: 18px;
 	height: 17px;
+	padding-left: 3px;
 	background-image: url("../img/star.svg");
 	background-repeat: no-repeat;
 }
