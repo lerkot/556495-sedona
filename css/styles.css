@@ -1206,7 +1206,13 @@ body.inner-page {
 	background-position: 0 0;
 }
 
+.filter input[type="checkbox"]:focus + label::before {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
 .filter-range {
+	min-width: 225px;
 	width: 26.5%;
 	margin-left: auto;
 	color: #ffffff;
