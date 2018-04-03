@@ -1014,6 +1014,16 @@ input:nth-child(3):-ms-input-placeholder {
 	text-transform: uppercase;
 }
 
+.form-container .guest-child:-moz-placeholder {
+	padding-left: 55px;
+	color: #000;
+	font-size: 14px;
+	line-height: inherit;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
 input:nth-child(3)::-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
