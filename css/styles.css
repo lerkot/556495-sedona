@@ -516,7 +516,6 @@ img {
 
 
 .search-form label {
-
 	padding-left: 0px;
 	font-size: 14px;
 	line-height: 26px;
@@ -536,7 +535,7 @@ img {
 }
 
 .date-chekin label,
-.date-chekin label {
+.date-chekout label {
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -550,10 +549,16 @@ img {
 
 .search-form .date-chekout {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	width: 463px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+
 }
+
+/*Поле заезда*/
 
 .search-form .check-in {
 	width: 346px;
@@ -598,12 +603,13 @@ img {
 	box-sizing: border-box;
 }
 
+/*Поле выезда*/
 
 .search-form .check-out {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 16px;
+	margin-left: 14px;
 	font-size: 14px;
 	line-height: 37px;
 	font-weight: 700;
@@ -619,7 +625,7 @@ img {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 16px;
+	margin-left: 14px;
 	font-size: 14px;
 	line-height: 37px;
 	font-weight: 700;
@@ -634,7 +640,7 @@ img {
 	width: 346px;
 	height: 37px;
 	margin-bottom: 29px;
-	margin-left: 16px;
+	margin-left: 14px;
 	font-size: 14px;
 	font-weight: 700;
 	color: #000;
@@ -645,7 +651,7 @@ img {
 	box-sizing: border-box;
 }
 
-
+/*Стилизация первых двух плейсхолдеров*/
 
 .search-form input::-webkit-input-placeholder {
 	padding-left: 15px;
@@ -738,17 +744,18 @@ input::-webkit-inner-spin-button {
 }
 
 
+/*Стилизация иконок календаря*/
 
 .calendar-icon-in {
 	position: absolute;
 	top: 0px;
 	left: 419px;
 	display: block;
-	width: 38px;
-	height: 38px;
+	width: 37px;
+	height: 37px;
 	fill: #cacaca;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
 	cursor: pointer;
 }
 
@@ -757,11 +764,11 @@ input::-webkit-inner-spin-button {
 	top: 0px;
 	left: 419px;
 	display: block;
-	width: 38px;
-	height: 38px;
+	width: 37px;
+	height: 37px;
 	fill: #cacaca;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
 	cursor: pointer;
 
 }
@@ -771,17 +778,20 @@ input::-webkit-inner-spin-button {
 .calendar-icon-in:focus,
 .calendar-icon-out:focus {
 	fill: #000;
+	width: 37px;
+	height: 37px;
 
 }
 
 .calendar-icon-in:active,
 .calendar-icon-out:active {
 	fill: #90bcd7;
+	width: 37px;
+	height: 37px;
 	outline: 1px solid #e5e5e5;
 }
 
-.form-container .input-adult,
-.form-container.input-child {
+.form-container .input-adult {
 	position: relative;
 	margin: 0;
 	padding: 0;
@@ -789,6 +799,7 @@ input::-webkit-inner-spin-button {
 	box-sizing: border-box;
 }
 
+/*Поля формы детей и вззрослых*/
 
 .input-adult .guest-adult,
 .input-child .guest-child {
@@ -801,6 +812,8 @@ input::-webkit-inner-spin-button {
 	color: #000;
 	background-color: #f2f2f2;
 	border: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .input-adult .guest-adult:hover,
@@ -814,6 +827,8 @@ input::-webkit-inner-spin-button {
 	color: #000;
 	background-color: #ebebeb;
 	border: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .input-adult .guest-adult:focus,
@@ -827,53 +842,29 @@ input::-webkit-inner-spin-button {
 	color: #000;
 	background-color: #fff;
 	outline: 2px solid #e5e5e5;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .search-form .label-child-align {
 	padding-left: 39px;
 }
 
+/*Кнопки поля взрослого*/
+
 .input-adult .adult-minus {
 	position: absolute;
-	top: 1px;
+	top: 0;
 	left: 113px;
 	z-index: 1;
 	display: block;
-	width: 38px;
-	height: 38px;
+	width: 37px;
+	height: 37px;
 	stroke: #a9a9a9;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
 	cursor: pointer;
 
-}
-
-.input-child .child-minus {
-	position: absolute;
-	top: 188px;
-	left: 398px;
-	z-index: 1;
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #a9a9a9;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-}
-
-.input-child .child-plus {
-	position: absolute;
-	top: 188px;
-	left: 475px;
-	z-index: 1;
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #a9a9a9;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
 }
 
 .input-adult .adult-plus {
@@ -882,14 +873,128 @@ input::-webkit-inner-spin-button {
 	left: 190px;
 	z-index: 1;
 	display: block;
-	width: 38px;
-	height: 38px;
+	width: 37px;
+	height: 37px;
 	stroke: #a9a9a9;
 	border: none;
-	background-color: inherit;
+	background-color: transparent;
 	cursor: pointer;
 
 }
+
+/*Кнопки поля ребенка*/
+
+.form-container.input-child {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.input-child .child-minus {
+	position: absolute;
+	top: 187px;
+	left: 398px;
+	z-index: 2;
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #a9a9a9;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.input-child .child-plus {
+	position: absolute;
+	top: 187px;
+	left: 475px;
+	z-index: 2;
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #a9a9a9;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/*Поведение кнопок*/
+
+.input-adult .adult-minus,
+.input-child .child-minus {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #a9a9a9;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+.input-adult .adult-minus:hover,
+.input-child .child-minus:hover {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #000;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+
+.input-adult .adult-minus:active,
+.input-child .child-minus:active {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #90bcd7;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+
+.input-child .child-plus,
+.input-adult .adult-plus {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #a9a9a9;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+
+.input-child .child-plus:hover,
+.input-adult .adult-plus:hover {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #000;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+
+.input-child .child-plus:active,
+.input-adult .adult-plus:active {
+	display: block;
+	width: 37px;
+	height: 37px;
+	stroke: #90bcd7;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+}
+
+/*Плейсхолдеры для взрослого и ребенка*/
 
 input:nth-child(3)::-webkit-input-placeholder {
 	padding-left: 55px;
@@ -966,77 +1071,7 @@ input:last-of-type::placeholder {
 	text-transform: uppercase;
 }
 
-.adult-minus,
-.child-minus {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #a9a9a9;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-}
 
-
-.adult-minus:hover,
-.child-minus:hover {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #000;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-
-}
-
-.adult-minus:active,
-.child-minus:active {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #90bcd7;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-
-}
-
-.child-plus,
-.adult-plus {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #a9a9a9;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-}
-
-
-.child-plus:hover,
-.adult-plus:hover {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #000;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-
-}
-
-.child-plus:active,
-.adult-plus:active {
-	display: block;
-	width: 38px;
-	height: 38px;
-	stroke: #90bcd7;
-	border: none;
-	background-color: inherit;
-	cursor: pointer;
-
-}
 
 .btn-search {
 	width: 456px;
