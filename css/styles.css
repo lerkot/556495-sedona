@@ -473,6 +473,16 @@ img {
 	height: 593px;
 }
 
+/*JS*/
+
+.modal-show {
+    display: block;
+}
+
+.modal {
+    display: none;
+}
+
 .search-form {
 	position: absolute;
 	top: 0;
@@ -860,6 +870,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -875,6 +887,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -900,6 +914,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -914,6 +930,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -927,6 +945,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -939,6 +959,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #000;
 	border: none;
 	background-color: transparent;
@@ -951,6 +973,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #90bcd7;
 	border: none;
 	background-color: transparent;
@@ -963,6 +987,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #a9a9a9;
 	border: none;
 	background-color: transparent;
@@ -975,6 +1001,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #000;
 	border: none;
 	background-color: transparent;
@@ -987,6 +1015,8 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 37px;
 	height: 37px;
+	font-size: 14px;
+	line-height: 37px;
 	stroke: #90bcd7;
 	border: none;
 	background-color: transparent;
