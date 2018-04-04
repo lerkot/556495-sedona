@@ -550,7 +550,20 @@ img {
 	color: #000;
 }
 
+/*Поля заезда и выезда*/
+
 .search-form .date-chekin {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 463px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.search-form .date-chekout {
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -574,16 +587,7 @@ img {
 
 }
 
-.search-form .date-chekout {
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 463px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 
-}
 
 /*Поле заезда*/
 
@@ -749,6 +753,50 @@ img {
 	vertical-align: middle;
 }
 
+.search-form input.check-in:-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+.search-form input.check-in::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+.search-form input.check-out:-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.search-form input.check-out::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	vertical-align: middle;
+}
+
 .search-form input.check-in::placeholder,
 .search-form input.check-out::placeholder {
 	padding-left: 15px;
@@ -817,6 +865,8 @@ input::-webkit-inner-spin-button {
 	height: 37px;
 	outline: 1px solid #e5e5e5;
 }
+
+
 
 .form-container .input-adult {
 	position: relative;
@@ -893,7 +943,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .input-adult .adult-plus {
@@ -910,7 +961,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*Кнопки поля ребенка*/
@@ -937,6 +989,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .input-child .child-plus {
@@ -953,6 +1007,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /*Поведение кнопок*/
@@ -968,6 +1024,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -982,6 +1040,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
@@ -996,6 +1056,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
@@ -1010,6 +1072,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -1024,6 +1088,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
@@ -1038,6 +1104,8 @@ input::-webkit-inner-spin-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 }
 
@@ -1045,29 +1113,44 @@ input::-webkit-inner-spin-button {
 
 input:nth-child(3)::-webkit-input-placeholder {
 	padding-left: 55px;
+
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 input:nth-child(3):-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
-.form-container .guest-child:-moz-placeholder {
-	padding-left: 55px;
+input:nth-child(3)::-moz-placeholder {
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
+
+input:nth-child(3):-moz-placeholder {
+
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 }
 
 
@@ -1075,18 +1158,20 @@ input:nth-child(3)::-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 input:nth-child(3)::placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 
@@ -1096,36 +1181,64 @@ input:last-of-type::-webkit-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+
+	vertical-align: middle;
 }
 
 input:last-of-type:-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 input:last-of-type::-ms-input-placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
 }
+
+.input:last-of-type::-moz-placeholder {
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.input:last-of-type:-moz-placeholder {
+
+	color: #000;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+}
+
 
 input:last-of-type::placeholder {
 	padding-left: 55px;
 	color: #000;
 	font-size: 14px;
-	line-height: inherit;
+	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	vertical-align: middle;
 }
 
 
@@ -1145,6 +1258,7 @@ input:last-of-type::placeholder {
 	border: none;
 	cursor: pointer;
 	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	outline: 1px solid #e5e5e5;
 }
 
@@ -1163,6 +1277,7 @@ input:last-of-type::placeholder {
 	color: #fff;
 	background-color: #669ec0;
 	border: none;
+	box-sizing: border-box;
 }
 
 .btn-search:active {
@@ -1179,6 +1294,7 @@ input:last-of-type::placeholder {
 	color: rgba(255, 255, 255, 0.30);
 	background-color: #669ec0;
 	border: none;
+	box-sizing: border-box;
 }
 
 
@@ -1553,7 +1669,6 @@ body.inner-page {
 
 .price-controls label {
 	display: inline-block;
-
 	font-size: 14px;
 	line-height: 32px;
 	vertical-align: top;
@@ -1578,37 +1693,31 @@ body.inner-page {
 	color: inherit;
 	font: inherit;
 	line-height: 32px;
-
 	background: none;
 	border: none;
 }
 
 .range-controls {
 	position: relative;
-
 	margin-bottom: 32px;
 }
 
 .range-controls .scale {
 	height: 2px;
-
 	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
-
 	background: #ffffff;
 }
 
 .range-toggle {
 	position: absolute;
 	top: -9px;
-
 	width: 4px;
 	height: 4px;
-
 	background: #ababab;
 	border: 8px solid #ffffff;
 	border-radius: 50%;
@@ -1635,12 +1744,10 @@ body.inner-page {
 	display: block;
 	margin: 0 86px;
 	padding: 6px 35px;
-
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
 	text-transform: uppercase;
-
 	background: transparent;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -1649,7 +1756,6 @@ body.inner-page {
 
 .btn-transparent:hover {
 	color: #000000;
-
 	background: #ffffff;
 }
 
@@ -1995,6 +2101,7 @@ a.hotel-name:active {
 .stars-container-villas .star {
 	display: inline-block;
 	text-align: right;
+	vertical-align: top;
 	width: 18px;
 	height: 17px;
 	padding-left: 3px;
